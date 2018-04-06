@@ -162,6 +162,23 @@
     		  <!-- <div class="isotopeWrapper clearfix" id="4"> -->
 
     		  <article class="col-md-4 isotopeItem Research">
+          <div class="portfolio-item">
+            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="img/fxa.jpg" class="img-responsive" alt="Mozilla">
+            </a>
+            <div class="portfolio-caption">
+            <h4>Push Notifications for Sign in Confirmation | Firefox Accounts | Mozilla</h4>
+            <p class="text-muted">May 2017 - August 2017</p>
+            </div>
+          </div>      
+          </article>
+
+          <article class="col-md-4 isotopeItem Research">
     			<div class=" portfolio-item">
     			  <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
     				<div class="portfolio-hover">
@@ -214,7 +231,7 @@
 			  
 			  <article class="col-md-4 isotopeItem Research">
     			<div class=" portfolio-item">
-    			  <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+    			  <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
     				<div class="portfolio-hover">
     				  <div class="portfolio-hover-content">
     					<i class="fa fa-plus fa-3x"></i>
@@ -348,7 +365,38 @@
 	</footer>
 
 
-	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+      <div class="rl">
+      </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="modal-body">
+        <!-- Project Details Go Here -->
+        <h2>Push Notifications for Sign in Confirmation | Firefox Accounts | Mozilla</h2>
+        <p>Aim of this project was to implement a form of 2-factor authentication in Firefox Accounts. Once completed, if a user has multiple devices connected to their Firefox Account, they will be able to receive a push notification to one of their other devices asking for confirmation when trying to log in to their Firefox Account.
+        The project was completed in four parts:-
+        Firefox Accounts verify login push notification for desktop: Modified the code of Mozilla Firefox (Desktop Client) to trigger a notification, using content from the payload on receiving a request from Firefox Accounts Auth Server.
+        Sending request from the auth server: If the user is already signed in, this is checked in the database, the auth-server will send a push notification instead of an email for confirmation. 
+        Updated the confirm view to handle when verification is using push: The auth-server will determine whether to send a message via email or push. The confirm view was updated to display appropriate text depending on if the user should look in their email or at another device.
+        Created a new view for sign in confirmation using push notification: Created a new view called confirmation view in fxa-content-server. As the user clicks on the push-notification for sign-in confirmation, the confirmation view appears.</p>
+        <p>
+          <center>Mentor: <a href="https://github.com/seanmonstar">Sean McArthur</a>, Senior Software Engineer, Mozilla, California</center>
+        </p>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-content">
 		<div class="close-modal" data-dismiss="modal">
 		  <div class="lr">
@@ -469,7 +517,7 @@
 	</div>
 
 	<!-- Portfolio Modal 6 -->
-	<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-content">
 		<div class="close-modal" data-dismiss="modal">
 		  <div class="lr">
